@@ -3,3 +3,8 @@ Packages
 Assets/TextMesh Pro
 *.meta
 Library
+Logs
+obj
+ProjectSettings
+Temp
+UserSettings
