@@ -5,7 +5,7 @@ I created a basic card game and menu, allowing the user to choose difficulty set
 The game is played by first selecting a difficulty. You then race against the clock to empty your "deck". As you play cards, your deck comes closer to emptying.
 To play cards, you drag them to an empty square in the center, or a square occupied by a number one higher or lower than the card being played. NOTE: 10 can be played on 1 and vice versa.
 
-[Software Demo Video](http://youtube.link.goes.here)
+[Software Demo Video](https://www.youtube.com/watch?v=RYEm3s5pYDc)
 
 # Development Environment
 
