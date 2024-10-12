@@ -4,6 +4,10 @@ using UnityEngine;
 
 public class C1 : DragDrop
 {
+    // Stops "dragging" the card once the card is released
+    // If the card originated from the playerArea, it checks to
+    // ensure it's in a playable area (dropZone), then checks
+    // it the current card in the dropZone is a correct value
     public override void EndDrag()
     {
         isDragging = false;

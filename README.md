@@ -5,8 +5,6 @@ I created a basic card game and menu, allowing the user to choose difficulty set
 The game is played by first selecting a difficulty. You then race against the clock to empty your "deck". As you play cards, your deck comes closer to emptying.
 To play cards, you drag them to an empty square in the center, or a square occupied by a number one higher or lower than the card being played. NOTE: 10 can be played on 1 and vice versa.
 
-{Provide a link to your YouTube demonstration. It should be a 4-5 minute demo of the game being played and a walkthrough of the code.}
-
 [Software Demo Video](http://youtube.link.goes.here)
 
 # Development Environment
@@ -17,8 +15,6 @@ To play cards, you drag them to an empty square in the center, or a square occup
 - Git / Github
 
 # Useful Websites
-
-{Make a list of websites that you found helpful in this project}
 
 - [Create a 2D Card Game - Part 1](https://www.youtube.com/watch?v=0-dUB52eEMk)
 - [Create a 2D Card Game - Part 2](https://www.youtube.com/watch?v=eo6-FIT3G0M)

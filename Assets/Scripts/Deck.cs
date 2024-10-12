@@ -10,11 +10,9 @@ public class Deck : MonoBehaviour
     [SerializeField] float remainingDeck;
     public GameObject playerArea;
 
-    /*private void Start()
-    {
-        remainingDeck = 30;
-    }*/
-
+    // Checks the playerArea every frame, reducing the remainingDeck
+    // count if there are less than 5 cards. If remainingDeck is less
+    // than one, the gameOver method is called
     private void Update()
     {
         if (playerArea.transform.childCount < 5)
@@ -29,6 +27,7 @@ public class Deck : MonoBehaviour
         }
     }
 
+    // Changes the scene to the GameWin scene
     private void GameOver()
     {
         SceneManager.LoadSceneAsync("GameWin");

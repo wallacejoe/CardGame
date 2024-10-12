@@ -18,6 +18,9 @@ public class StartGame : MonoBehaviour
 
     List<GameObject> cards = new List<GameObject>();
 
+    // This method is run initially on creation of the object
+    // It adds each card type to the Canvas object
+    // It then adds five cards to the playerArea
     private void Start()
     {
         cards.Add(Card1);
@@ -38,6 +41,8 @@ public class StartGame : MonoBehaviour
         }
     }
 
+    // Checks the playerArea late every frame, adding cards if the
+    // playerArea contains less than five
     private void LateUpdate()
     {
         if (playerArea.transform.childCount < 5)

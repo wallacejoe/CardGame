@@ -9,11 +9,8 @@ public class CountdownTimer : MonoBehaviour
     [SerializeField] TextMeshProUGUI countdownText;
     [SerializeField] float remainingTime;
 
-    /*private void Start()
-    {
-        remainingTime = 90;
-    }*/
-
+    // Sets the countdownTime format, and reduces the time
+    // Calls the GameOver method if the time is lower than one
     private void Update()
     {
         remainingTime -= Time.deltaTime;
@@ -27,11 +24,13 @@ public class CountdownTimer : MonoBehaviour
         }
     }
 
+    // Changes the scene to the GameOver scene
     private void GameOver()
     {
         SceneManager.LoadSceneAsync("GameOver");
     }
 
+    // Reduces the remaining time by five seconds
     public void ReduceTime()
     {
         remainingTime -= 5;

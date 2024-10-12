@@ -19,6 +19,8 @@ public class Shuffle : MonoBehaviour
     List<GameObject> cards = new List<GameObject>();
     public GameObject timer;
 
+    // This method is run initially on creation of the object
+    // It adds each card type to the shuffle object
     void Start()
     {
         cards.Add(Card1);
@@ -33,17 +35,23 @@ public class Shuffle : MonoBehaviour
         cards.Add(Card10);
     }
 
+    // This method removes the existing "hand" of cards and replaces
+    // them with new cards. It does this by removing the children of
+    // the playerArea, where the hand is stored, then adds 5 new cards
     public void OnClick()
     {
+        // Removes all five cards from the playerArea
         for (int i = 0; i < 5; i++)
         {
             Destroy(playerArea.transform.GetChild(i).gameObject);
         }
+        // Adds five random cards to the playerArea
         for (int i = 0; i < 5; i++)
         {
             GameObject playerCard = Instantiate(cards[Random.Range(0, cards.Count)], new Vector3(0, 0, 0), Quaternion.identity);
             playerCard.transform.SetParent(playerArea.transform, false);
         }
+        // Calls the timer reduceTime method
         timer.GetComponent<CountdownTimer>().ReduceTime();
     }
 }
